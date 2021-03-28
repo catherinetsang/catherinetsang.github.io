@@ -1,0 +1,57 @@
+baseURL = "https://andyytea.github.io/"
+languageCode = "en-us"
+title = "random thoughts"
+theme = "qnd"
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+summaryLength=20
+
+[params]
+  description = "andy's personal blog"
+  copyright = "Copyright © 2021 Andy Tsang"
+  highlight = true
+    [[params.socialIcons]]
+      name = "rss"
+      url = "https://andyytea.github.io/posts/index.xml"
+    [[params.socialIcons]]
+      name = "github"
+      url = "https://github.com/andyytea"
+    [[params.socialIcons]]
+      name = "linkedin"
+      url = "https://www.linkedin.com/in/andytsang-/"
+    [[params.socialIcons]]
+      name = "email"
+      url = "mailto:andy.teasang515@gmail.com"
+
+[menu]
+  [[menu.main]]
+    identifier = "notes"
+    name = "notes"
+    title = "notes"
+    url = "/notes/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "posts"
+    title = "posts"
+    url = "/posts/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    title = "about"
+    url = "/about/"
+    weight = 30
+
+[permalinks]
+  posts = "/:title/"
+
+[markup.goldmark.renderer]
+  # Allow HTML in Markdown
+  unsafe = true
+
+  [markup.tableOfContents]
+    ordered = true
