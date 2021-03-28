@@ -1,6 +1,6 @@
-baseURL = "https://andyytea.github.io/"
+baseURL = "https://catherinetsang.github.io/"
 languageCode = "en-us"
-title = "random thoughts"
+title = "curious cat"
 theme = "qnd"
 enableInlineShortcodes = true
 pygmentsCodeFences = true
@@ -9,20 +9,20 @@ summaryLength=20
 
 [params]
   description = "andy's personal blog"
-  copyright = "Copyright © 2021 Andy Tsang"
+  copyright = "Copyright © 2021 Catherine Tsang"
   highlight = true
     [[params.socialIcons]]
       name = "rss"
-      url = "https://andyytea.github.io/posts/index.xml"
+      url = "https://catheirnetsang.github.io/posts/index.xml"
     [[params.socialIcons]]
       name = "github"
-      url = "https://github.com/andyytea"
+      url = "https://github.com/catherinetsang"
     [[params.socialIcons]]
       name = "linkedin"
-      url = "https://www.linkedin.com/in/andytsang-/"
+      url = "https://www.linkedin.com/in/catsang/"
     [[params.socialIcons]]
       name = "email"
-      url = "mailto:andy.teasang515@gmail.com"
+      url = "mailto:itscatherinetsang@gmail.com"
 
 [menu]
   [[menu.main]]
