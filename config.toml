@@ -1,7 +1,6 @@
 baseURL = "https://catherinetsang.github.io/"
 languageCode = "en-us"
 title = "curious cat"
-theme = "qnd"
 enableInlineShortcodes = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true

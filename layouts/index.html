@@ -1,0 +1,29 @@
+{{ define "main" }}
+{{ .Content }}
+{{- partial "social_icons.html" $.Site.Params.socialIcons -}}
+<h3>Recent Note</h3>
+<ul id="posts">
+{{- range first 1 (where site.RegularPages "Type" "note")}}
+    <li>
+        <a href="{{ .Permalink }}">
+            {{ .Title }}
+        </a>
+        <small><time>{{ .Date.Format "Jan 2, 2006" }}</time></small>
+        <div class="summary">{{ .Summary }}...</div>
+    </li>
+{{- end }}
+</ul>
+<h3>Latest Post</h3>
+<ul id="posts">
+
+{{- range first 1 (where site.RegularPages "Type" "post")}}
+    <li>
+        <a href="{{ .Permalink }}">
+            {{ .Title }}
+        </a>
+        <small><time>{{ .Date.Format "Jan 2, 2006" }}</time></small>
+        <div class="summary">{{ .Summary }}...</div>
+    </li>
+{{- end }}
+</ul>
+{{ end }}
